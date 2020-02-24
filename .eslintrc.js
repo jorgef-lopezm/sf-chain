@@ -6,7 +6,7 @@ module.exports = {
       jsx: true,
     },
   },
-  env: { es6: true },
+  env: { es6: true, jest: true },
   extends: 'airbnb-base',
   rules: {
     semi: 'error',
