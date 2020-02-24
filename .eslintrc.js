@@ -11,7 +11,7 @@ module.exports = {
   rules: {
     semi: 'error',
     'max-len': ['error', 85],
-    'new-cap': ['error', { newIsCap: true }],
+    'new-cap': ['error', { newIsCap: true, capIsNewExceptions: ['SHA256'] }],
     'require-jsdoc': [
       'error',
       {
@@ -25,5 +25,6 @@ module.exports = {
       },
     ],
     'space-before-function-paren': 'off',
+    'valid-jsdoc': 'error',
   },
 };
