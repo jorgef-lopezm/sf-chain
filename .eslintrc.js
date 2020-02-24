@@ -10,7 +10,7 @@ module.exports = {
   extends: 'airbnb-base',
   rules: {
     semi: 'error',
-    'max-len': ['error', 85],
+    'max-len': ['error', 80],
     'new-cap': ['error', { newIsCap: true, capIsNewExceptions: ['SHA256'] }],
     'require-jsdoc': [
       'error',
@@ -26,5 +26,8 @@ module.exports = {
     ],
     'space-before-function-paren': 'off',
     'valid-jsdoc': 'error',
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    curly: ['error', 'multi'],
+    'nonblock-statement-body-position': ['error', 'below'],
   },
 };

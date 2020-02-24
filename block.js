@@ -21,7 +21,7 @@ export default class Block {
   }
 
   /**
-   * To string method for debugging purposes
+   * Method for converting attributes to string for debugging purposes
    * @returns {String} The class attributes as a string
    */
   toString() {
@@ -41,7 +41,7 @@ export default class Block {
   }
 
   /**
-   * Mine block method for creating new blocks
+   * Method for creating new blocks
    * @param {Object} lastBlock The previous created block object
    * @param {Array} data The input data for the transaction
    * @returns {Object} The block object that was created
@@ -55,7 +55,7 @@ export default class Block {
   }
 
   /**
-   * Hash method for making the hash value for the blocks
+   * Method for making the hash value for the blocks
    * @param {String} timestamp The previous created block object
    * @param {String} lastHash The input data for the transaction
    * @param {Array} data The input data for the transaction
@@ -63,5 +63,16 @@ export default class Block {
    */
   static hash(timestamp, lastHash, data) {
     return SHA256(`${timestamp}${lastHash}${data}`).toString();
+  }
+
+  /**
+   * Method that returns the hash of the specified block
+   * @param {Object} block The block to get the hash from
+   * @return {String} The hash of the specified block
+   */
+  static blockHash(block) {
+    const { timestamp, lastHash, data } = block;
+
+    return this.hash(timestamp, lastHash, data);
   }
 }
