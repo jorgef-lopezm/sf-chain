@@ -1,15 +1,16 @@
 {
   "name": "sf-chain",
   "version": "1.0.0",
-  "description": "",
+  "description": "Block chain project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-test": "nodemon --exec babel-node dev-test.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jorge Lopez",
   "license": "ISC",
+  "repository": "https://github.com/jorgef-lopezm/sf-chain.git",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",

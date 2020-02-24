@@ -24,4 +24,9 @@ export default class Block {
         Hash     : ${this.hash.substring(0, 10)}
         Data     : ${this.data}`;
   }
+
+  /**
+   * Genesis function
+   */
+  static genesis() {}
 }
